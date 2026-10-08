@@ -1,0 +1,26 @@
+name: vku_expense_ocr
+description: "VKU On-Device OCR Expense Tracker"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_mlkit_text_recognition: ^0.13.0 # Nhận diện OCR offline
+  image_picker: ^1.1.2                   # Chụp/chọn ảnh hóa đơn
+  flutter_riverpod: ^2.5.1               # Quản lý trạng thái
+  go_router: ^13.2.0                     # Điều hướng ứng dụng
+  sqflite: ^2.3.2                        # Cơ sở dữ liệu SQLite
+  path: ^1.9.0                           # Xử lý đường dẫn
+  intl: ^0.19.0                          # Định dạng ngày giờ & tiền tệ
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
